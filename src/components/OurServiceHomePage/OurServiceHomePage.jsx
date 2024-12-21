@@ -1,12 +1,12 @@
 import React from 'react';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 const OurServiceHomePage = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <div>
-            <div className='pt-20 pb-20' style={{ backgroundColor: "#d1d1d3" }}>
+            <div className='pt-20 pb-20' style={{backgroundColor: "#d1d1d3"}}>
                 <h2 className='uppercase text-4xl text-center mt-16'>
                     {t("home_page.our_service")}
                 </h2>
@@ -19,7 +19,7 @@ const OurServiceHomePage = () => {
                     {t("home_page.our_service_desc")}
                 </p>
             </div>
-            <div className='flex flex-wrap dark:bg-gray-800'>
+            <div className='flex md:flex-row xs:flex-col flex-wrap dark:bg-gray-800'>
                 <div className='md:container mx-auto w-full flex flex-1 flex-wrap justify-center items-start md:gap-8'>
                     {[
                         {
@@ -47,8 +47,8 @@ const OurServiceHomePage = () => {
                                 <h5 className="mb-2 text-lg font-bold uppercase tracking-tight text-gray-900 dark:text-white">
                                     {service.title}
                                 </h5>
-                                <hr className='w-1/3 text-black mb-2' />
-                                <hr className='w-1/4 text-black mb-2' />
+                                <hr className='w-1/3 text-black mb-2'/>
+                                <hr className='w-1/4 text-black mb-2'/>
                                 <p className="mb-3 text-justify dark:text-gray-400">
                                     {service.description}
                                 </p>
@@ -56,9 +56,7 @@ const OurServiceHomePage = () => {
                         </div>
                     ))}
                 </div>
-                <div className=''>
-                    <img src="/ourService.jpg" alt="ourService" />
-                </div>
+                <img src="/ourService.jpg" alt="ourService"/>
             </div>
         </div>
     );

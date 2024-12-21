@@ -44,9 +44,10 @@
     "web_development_desc": "We create modern and high-performance websites using cutting-edge technologies such as React, Node.js, Strapi and Vite. Our approach ensures optimal speed, functionality and aesthetic design.",
     "responsive_design": "Responsive design",
     "responsive_design_dsc": "We create websites that automatically adjust to screens of any size, providing a convenient user experience on smartphones, tablets, and computers. Your site will look and work perfectly, no matter the device.",
-    "mission": "Mission",
+    "mission": "Our mission",
     "mission_title": "Digital solutions designed for your success",
-    "mission_desc": "We focus on functionality, design, and efficiency to ensure your website delivers tangible results. Our goal is to help you build customer trust and convert visitors into buyers. With us, your website will become a reliable tool for achieving your goals."
+    "mission_desc": "We focus on functionality, design, and efficiency to ensure your website delivers tangible results. Our goal is to help you build customer trust and convert visitors into buyers. With us, your website will become a reliable tool for achieving your goals.",
+    "leave_message": "Leave a request"
 
 
   }
