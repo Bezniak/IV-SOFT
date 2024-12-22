@@ -47,8 +47,36 @@
     "mission": "Our mission",
     "mission_title": "Digital solutions designed for your success",
     "mission_desc": "We focus on functionality, design, and efficiency to ensure your website delivers tangible results. Our goal is to help you build customer trust and convert visitors into buyers. With us, your website will become a reliable tool for achieving your goals.",
-    "leave_message": "Leave a request"
+    "leave_message": "Leave a request",
+    "help_title": "To achieve this, at IV-SOFT we take the following steps:",
+    "hosting_help_title": "We help with purchasing hosting and domain",
+    "hosting_help_desc": "We will explain all the details in simple language so that you save time and money by avoiding unnecessary expenses.",
+    "take_into_account": "We take into account your business and marketing laws for the best results",
+    "take_into_account_desc": "your website makes a good impression at first glance and stands out from the competition",
+    "seo_settings_title": "We include basic SEO settings in development",
+    "seo_settings_desc": "This ensures a flow of potential customers from search engines over time, and you don’t have to order SEO promotion.",
+    "register_title": "We register the site in Google and Yandex, install counters",
+    "register_desc": "This is necessary so that the site is displayed in search results, and counters will help track how many people visit the site, what pages they go to, and how they leave requests.",
+    "fast_loading": "Fast loading and responsiveness",
+    "fast_loading_desc": "We create pages that load quickly on any connection and are responsive to all devices, improving user experience and helping with SEO.",
+    "certificate": "Connecting an SSL certificate",
+    "certificate_desc": "This is necessary for the safety of users. It protects data, increases visitors' trust in the resource and increases the site's ranking in search results.",
+    "form_title": "INTERESTED IN WEBSITE DEVELOPMENT AND PROMOTION?"
+  },
+  "name": "Name",
+  "name_required": "Name is required",
+  "phone": "Phone",
+  "phone_required": "Phone is required",
+  "enter_valid_phone_number": "Enter a valid phone number",
+  "email": "Email",
+  "email_required": "Email is required",
+  "enter_valid_email": "Please enter a valid email",
+  "message": "Message...",
+  "choose_file": "Attach file",
+  "no_file_chosen": "No file chosen",
+  "discuss_product": "discuss product"
 
 
-  }
+
+
 }
