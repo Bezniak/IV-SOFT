@@ -7,6 +7,7 @@ export const ROUTES = {
     PORTFOLIO: "/portfolio",
     PRICES: "/price",
     SERVICES: "/services",
+    PRIVACY_POLICY: "/privacy-policy",
 
     SITES: "/sites:id",
     BUSINESS_CARD_WEBSITE: "/business-card-website",
@@ -17,7 +18,8 @@ export const ROUTES = {
     ONLINE_SCHOOL_WEBSITES: "/online-school-websites",
     QUIZ_SITE: "/quiz-site",
     WEDDING_INVITATION_WEBSITE: "/wedding-invitation-website",
-    WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS: "/websites_for_government_organizations"
+    WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS: "/websites_for_government_organizations",
+    CAREERS: "/careers"
 
 
 

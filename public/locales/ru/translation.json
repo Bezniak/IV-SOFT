@@ -5,6 +5,7 @@
   "portfolio": "Портфолио",
   "prices": "Цены",
   "Faq": "FAQ",
+  "all_right_reserved": "Все права защищены.",
   "contacts": "Контакты",
   "business_card_website": "Сайт-визитка",
   "landing": "Лендинг",
@@ -74,5 +75,11 @@
   "message": "Сообщение...",
   "choose_file": "Прикрепить файл",
   "no_file_chosen": "Файл не выбран",
-  "discuss_product": "ОБСУДИТЬ ПРОЕКТ"
+  "discuss_product": "ОБСУДИТЬ ПРОЕКТ",
+  "company": "Компания",
+  "about_us": "О нас",
+  "careers": "Карьера",
+  "privacy_policy": "Политика конфиденциальности",
+  "UNP": "УНП 590210932."
+
 }

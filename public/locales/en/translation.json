@@ -5,6 +5,7 @@
   "portfolio": "Portfolio",
   "prices": "Prices",
   "Faq": "FAQ",
+  "all_right_reserved": "All Rights Reserved.",
   "contacts": "Contacts",
   "business_card_website": "Business card website",
   "landing": "Landing",
@@ -74,7 +75,11 @@
   "message": "Message...",
   "choose_file": "Attach file",
   "no_file_chosen": "No file chosen",
-  "discuss_product": "discuss product"
+  "discuss_product": "discuss product",
+  "company": "Company",
+  "about_us": "About",
+  "careers": "Careers",
+  "UNP": "TIN 590210932."
 
 
 

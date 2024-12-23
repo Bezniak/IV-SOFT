@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Websites from "./components/WebSites/Websites.jsx";
+import Careers from "./components/Careers/Careers.jsx";
 
 
 const Layout = () => {
@@ -38,6 +39,10 @@ const App = () => {
                 {
                     path: ROUTES.SITES,
                     element: <Websites/>
+                },
+                {
+                    path: ROUTES.CAREERS,
+                    element: <Careers/>
                 },
             ]
         },
