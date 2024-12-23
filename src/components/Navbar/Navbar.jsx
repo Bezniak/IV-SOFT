@@ -67,7 +67,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className="absolute z-50 top-0 left-1/2 transform -translate-x-1/2 bg-transparent border-gray-200 w-full">
+        <nav className="absolute z-50 top-0 left-1/2 transform -translate-x-1/2 bg-black border-gray-200 w-full">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
                 <div className='flex gap-6'>
@@ -86,7 +86,7 @@ const Navbar = () => {
 
                     <NavLink to={ROUTES.HOME} className="flex flex-col items-center justify-center">
                         <div
-                            className="self-center md:text-4xl xs:text-lg font-semibold whitespace-nowrap text-black dark:text-white border dark:border-none rounded px-3 py-1 bg-white dark:bg-transparent border-black dark:border-white">
+                            className="self-center md:text-4xl xs:text-lg font-semibold whitespace-nowrap text-white">
                             IV-SOFT
                         </div>
                     </NavLink>
@@ -104,17 +104,18 @@ const Navbar = () => {
                         className="text-white hover:text-gray-700 dark:text-gray-300 dark:hover:text-white focus:outline-none"
                         aria-label="Toggle Theme"
                     >
-                        {theme === 'light' ? <IoSunnySharp size={28} color="black"/> : <FaMoon size={24}/>}
+                        {theme === 'light' ? <IoSunnySharp size={28} color="white"/> : <FaMoon size={24}/>}
                     </button>
                 </div>
 
-                <div className={`$ ${isMobileMenuOpen ? 'block' : 'hidden'} w-full  md:block md:w-auto md:bg-transparent xs:bg-white md:dark:bg-transparent xs:dark:bg-gray-900`}
-                     id="mobile-dropdown"
+                <div
+                    className={`$ ${isMobileMenuOpen ? 'block' : 'hidden'} w-full  md:block md:w-auto md:bg-transparent xs:bg-black md:dark:bg-transparent xs:dark:bg-gray-900`}
+                    id="mobile-dropdown"
                 >
                     <ul className="flex flex-col font-medium p-4 md:p-0 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                         <li>
                             <NavLink to={ROUTES.HOME}
-                                     className="block py-2 px-3 md:p-0 dark:text-white text-black rounded bg-transparent transition"
+                                     className="block py-2 px-3 md:p-0 text-white transition"
                                      aria-current="page">
                                 {t("home")}
                             </NavLink>
@@ -122,7 +123,7 @@ const Navbar = () => {
 
                         <li>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                                    className="flex items-center justify-between w-full py-2 px-3 dark:text-white transition text-black rounded  md:border-0 md:p-0 md:w-auto sites-toggle"
+                                    className="flex items-center justify-between w-full py-2 px-3 text-white transition md:border-0 md:p-0 md:w-auto sites-toggle"
                                     onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}
                             >
                                 {t('website_development')}
@@ -138,69 +139,69 @@ const Navbar = () => {
 
                             {/*Sites Dropdown menu*/}
                             <div id="sites-dropdown"
-                                 className={`z-10 ${isSitesDropdownOpen ? '' : 'hidden'} absolute mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow md:w-fit xs:w-10/12 dark:bg-gray-700 dark:divide-gray-600`}
+                                 className={`z-10 ${isSitesDropdownOpen ? '' : 'hidden'} absolute mt-2 font-normal divide-y rounded-lg shadow md:w-fit xs:w-10/12 bg-gray-700 divide-gray-600`}
                             >
-                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-400 dark:bg-gray-900"
+                                <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.BUSINESS_CARD_WEBSITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("business_card_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.LANDING}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("landing")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.CORPORATE_WEBSITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("corporate_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.CATALOG_SITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("catalog_site")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.ONLINE_STORE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_store")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.ONLINE_SCHOOL_WEBSITES}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_school_websites")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.QUIZ_SITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("quiz_site")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.WEDDING_INVITATION_WEBSITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("wedding_invitation_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
                                         <NavLink to={ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("websites_for_government_organizations")}
                                         </NavLink>
@@ -213,7 +214,7 @@ const Navbar = () => {
 
                         <li>
                             <button id="dropdownNavbarLink-2" data-dropdown-toggle="dropdownNavbar"
-                                    className="flex items-center justify-between w-full py-2 px-3 dark:text-white text-black rounded hover:bg-transparent md:border-0 transition md:p-0 md:w-auto services-toggle"
+                                    className="flex items-center justify-between w-full py-2 px-3 text-white transition md:p-0 md:w-auto services-toggle"
                                     onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
                             >
                                 {t('services')}
@@ -229,27 +230,27 @@ const Navbar = () => {
 
                             {/*Services Dropdown menu*/}
                             <div id="services-dropdown"
-                                 className={`z-10 ${isServicesDropdownOpen ? '' : 'hidden'} absolute mt-2 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow md:w-fit xs:w-10/12 dark:bg-gray-700 dark:divide-gray-600 services-toggle`}
+                                 className={`z-10 ${isServicesDropdownOpen ? '' : 'hidden'} absolute mt-2 font-normal divide-y  rounded-lg shadow md:w-fit xs:w-10/12 bg-gray-700 divide-gray-600 services-toggle`}
                             >
-                                <ul className="py-2 text-sm text-gray-700 dark:text-gray-400 dark:bg-gray-900"
+                                <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
                                         <NavLink to={ROUTES.BUSINESS_CARD_WEBSITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("website_support")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
                                         <NavLink to={ROUTES.LANDING}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("SMM")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
                                         <NavLink to={ROUTES.CORPORATE_WEBSITE}
-                                                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                 className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("localization_and_translation")}
                                         </NavLink>
@@ -261,29 +262,26 @@ const Navbar = () => {
 
                         <li>
                             <NavLink to={ROUTES.PORTFOLIO}
-                                     className="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white text-black transition"
+                                     className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition"
                             >
                                 {t("portfolio")}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.PRICES}
-                                     className="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white text-black transition"
-                            >
+                                     className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("prices")}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.FAQ}
-                                     className="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white text-black transition"
-                            >
+                                     className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("Faq")}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.CONTACTS}
-                                     className="block py-2 px-3 rounded md:border-0 md:p-0 dark:text-white text-black transition"
-                            >
+                                     className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("contacts")}
                             </NavLink>
                         </li>
@@ -300,10 +298,10 @@ const Navbar = () => {
 
                     <button
                         onClick={toggleTheme}
-                        className="text-dark hover:text-gray-700 dark:text-gray-300 dark:hover:text-white focus:outline-none"
+                        className="text-white focus:outline-none"
                         aria-label="Toggle Theme"
                     >
-                        {theme === 'light' ? <IoSunnySharp size={28} color="yellow"/> : <FaMoon size={24}/>}
+                        {theme === 'light' ? <IoSunnySharp size={28}/> : <FaMoon size={24}/>}
                     </button>
 
                 </div>

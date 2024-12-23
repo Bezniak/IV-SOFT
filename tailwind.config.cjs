@@ -7,6 +7,9 @@ export default {
   theme: {
     darkMode: 'media',
     extend: {
+      spacing: {
+        'indent': '2em', // You can adjust the value as needed
+      },
       screens: {
         'xs': '320px',
         // => @media (min-width: 320) { ... }
