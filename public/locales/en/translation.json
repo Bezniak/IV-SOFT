@@ -104,7 +104,6 @@
     "data_transfer_countries": "In the event of data transfer to other countries, we guarantee compliance with international privacy standards.",
     "user_rights": "5. User rights",
     "depending_on_laws": "Depending on the laws of their country of residence, users may have the following rights:",
-
     "request_access": "Request access to your data.",
     "request_correction": "Request correction or deletion of data.",
     "restrict_data": "Restrict data processing.",
@@ -121,7 +120,22 @@
     "company_operates": "We operate in accordance with international privacy standards and process data in accordance with the laws of the countries in which users are located. When transferring data abroad, we use mechanisms that ensure data protection, such as standard contractual clauses.",
     "conclusion": "9. Conclusion",
     "have_any_questions": "If you have any questions or requests related to this Policy, you can contact us using the contact information provided on the website."
-
+  },
+  "aboutUs": {
+    "welcome_to": "Welcome to IV-SOFT!",
+    "welcome": "We are a team of professionals passionate about creating modern, functional and beautiful websites and applications for business.",
+    "mission_desc": "We strive to help your ideas become reality. Our solutions not only impress with their appearance, but also provide user convenience and achieve your goals.",
+    "why_choose_us": "Why choose us?",
+    "why_choose_us_desc_1": "Individual approach. We study your business in detail to offer a unique solution that will highlight your strengths.",
+    "why_choose_us_desc_2": "Modern technologies. We use the latest tools and methodologies, such as React and Node.js, to keep your projects up-to-date and reliable.",
+    "why_choose_us_desc_3": "Experience. Our team has successful projects under its belt, including websites for the delivery of healthy food and massage services.",
+    "our_values": "Our values",
+    "our_value_desc_1": "Quality: We always strive to create products that work flawlessly.",
+    "our_value_desc_2": "Transparency. We maintain open communication with clients at all stages of development.",
+    "our_value_desc_3": "Long-term cooperation. Our goal is to become a reliable partner, not just an executor.",
+    "out_approach": "Our experience and approach",
+    "out_approach_des_1": "IV-SOFT brings together professionals who know how to turn your ideas into successful digital projects. We draw inspiration from our clients' challenges and develop solutions that help businesses grow and stand out from the competition.",
+    "out_approach_des_2": "Our projects combine stylish design, ease of use and modern technologies to satisfy even the most demanding users."
 
   }
 }

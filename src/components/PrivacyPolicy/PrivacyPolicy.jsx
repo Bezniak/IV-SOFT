@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     const {t} = useTranslation();
 
     return (
-        <div className="fbg-gray-100 dark:bg-gray-900">
+        <div className="dark:bg-gray-900">
             <div className='relative h-screen w-full'>
                 <img src="/pp.jpg" alt="pp" className='h-screen w-full object-cover object-center'/>
                 <div className='absolute inset-0 flex md:items-center xs:mt-64 md:mt-0 justify-start w-1/4'>

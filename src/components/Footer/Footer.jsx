@@ -5,6 +5,7 @@ import {ROUTES} from "../../config/routes.js";
 import {FaInstagramSquare, FaViber} from "react-icons/fa";
 import {FaTelegram} from "react-icons/fa6";
 import {MdAlternateEmail} from "react-icons/md";
+import {handleClick} from "../../common/helpers.js";
 
 const Footer = () => {
     const {t} = useTranslation();
@@ -20,37 +21,37 @@ const Footer = () => {
                             {t("company")}
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.ABOUT_US} className=" hover:underline">
                                     {t("about_us")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.CAREERS} className="hover:underline">
                                     {t("careers")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.PORTFOLIO} className="hover:underline">
                                     {t("portfolio")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.FAQ} className="hover:underline">
                                     {t("Faq")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.PRIVACY_POLICY} className="hover:underline">
                                     {t("privacy_policy")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.PRICES} className="hover:underline">
                                     {t("prices")}
                                 </NavLink>
                             </li>
-                            <li className="mb-4">
+                            <li className="mb-4" onClick={handleClick}>
                                 <NavLink to={ROUTES.CONTACTS} className="hover:underline">
                                     {t("contacts")}
                                 </NavLink>
@@ -96,7 +97,7 @@ const Footer = () => {
 
                 <div className="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
                     <span className="text-base text-gray-500 dark:text-gray-300 sm:text-center">
-                        © {year} <NavLink to={ROUTES.HOME}>IV-SOFT™</NavLink>. {t("UNP")} {t("all_right_reserved")}
+                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>IV-SOFT™</NavLink>. {t("UNP")} {t("all_right_reserved")}
                     </span>
                     <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
                         <a href="https://www.facebook.com/vanja.besnjak/" target='_blank'
