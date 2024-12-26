@@ -136,6 +136,15 @@
     "out_approach": "Our experience and approach",
     "out_approach_des_1": "IV-SOFT brings together professionals who know how to turn your ideas into successful digital projects. We draw inspiration from our clients' challenges and develop solutions that help businesses grow and stand out from the competition.",
     "out_approach_des_2": "Our projects combine stylish design, ease of use and modern technologies to satisfy even the most demanding users."
+  },
+  "career" : {
+    "title": "Career at IV-SOFT: Discover Opportunities with Us",
+    "desc": "At IV-SOFT, we believe that the key to success is talented and passionate people. Our team consists of specialists who share a passion for technology, innovation and high quality.",
+    "desc_2": "We don't have any open positions at the moment, but we are always open to meeting talented professionals who are looking to grow. If you want to join our team, send us your resume and tell us about yourself.",
+    "leave_email": " We at IV-SOFT are constantly growing and developing. New opportunities appear regularly, and we are always glad to welcome talented specialists. Send your resume and cover letter to ",
+    "leave_email_2": " — perhaps we are looking for you!"
+
+
 
   }
 }
