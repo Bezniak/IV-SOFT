@@ -9,7 +9,7 @@ export const ROUTES = {
     SERVICES: "/services",
     PRIVACY_POLICY: "/privacy-policy",
 
-    SITES: "/sites:id",
+    SITES: "/sites/:id",
     BUSINESS_CARD_WEBSITE: "/business-card-website",
     LANDING: "/landing",
     CORPORATE_WEBSITE: "/corporate-website",

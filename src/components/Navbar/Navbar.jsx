@@ -144,63 +144,63 @@ const Navbar = () => {
                                 <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.BUSINESS_CARD_WEBSITE}
+                                        <NavLink to={'sites' + ROUTES.BUSINESS_CARD_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("business_card_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.LANDING}
+                                        <NavLink to={'sites' + ROUTES.LANDING}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("landing")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.CORPORATE_WEBSITE}
+                                        <NavLink to={'sites' + ROUTES.CORPORATE_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("corporate_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.CATALOG_SITE}
+                                        <NavLink to={'sites' + ROUTES.CATALOG_SITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("catalog_site")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.ONLINE_STORE}
+                                        <NavLink to={'sites' + ROUTES.ONLINE_STORE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_store")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.ONLINE_SCHOOL_WEBSITES}
+                                        <NavLink to={'sites' + ROUTES.ONLINE_SCHOOL_WEBSITES}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_school_websites")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.QUIZ_SITE}
+                                        <NavLink to={'sites' + ROUTES.QUIZ_SITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("quiz_site")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.WEDDING_INVITATION_WEBSITE}
+                                        <NavLink to={'sites' + ROUTES.WEDDING_INVITATION_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("wedding_invitation_website")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
-                                        <NavLink to={ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS}
+                                        <NavLink to={'sites' + ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("websites_for_government_organizations")}

@@ -7,6 +7,9 @@
   "Faq": "FAQ",
   "all_right_reserved": "All Rights Reserved.",
   "contacts": "Contacts",
+  "find_out_the_cost": "Find out the cost",
+  "example_text": "An example of what your site might look like",
+  "get_consultation": "Get a consultation",
   "business_card_website": "Business card website",
   "landing": "Landing",
   "corporate_website": "Corporate website",
@@ -137,14 +140,28 @@
     "out_approach_des_1": "IV-SOFT brings together professionals who know how to turn your ideas into successful digital projects. We draw inspiration from our clients' challenges and develop solutions that help businesses grow and stand out from the competition.",
     "out_approach_des_2": "Our projects combine stylish design, ease of use and modern technologies to satisfy even the most demanding users."
   },
-  "career" : {
+  "career": {
     "title": "Career at IV-SOFT: Discover Opportunities with Us",
     "desc": "At IV-SOFT, we believe that the key to success is talented and passionate people. Our team consists of specialists who share a passion for technology, innovation and high quality.",
     "desc_2": "We don't have any open positions at the moment, but we are always open to meeting talented professionals who are looking to grow. If you want to join our team, send us your resume and tell us about yourself.",
     "leave_email": " We at IV-SOFT are constantly growing and developing. New opportunities appear regularly, and we are always glad to welcome talented specialists. Send your resume and cover letter to ",
     "leave_email_2": " — perhaps we are looking for you!"
-
-
+  },
+  "businessCardWebsite": {
+    "name": "Development of a business card website",
+    "what_it_is": "A business card website is a compact, one-page website that contains all the basic information about your company, services or products. This website is ideal for small businesses, sole proprietors and freelancers who do not require a complex and expensive website with many features.",
+    "benefits_title": "Advantages of a business card website from IV-SOFT:",
+    "desc_1": "Homepage: A brief greeting and your mission.",
+    "desc_2": "About Us: A description of your company, story, or personal brand.",
+    "desc_3": "Services/Products: A list of offered services or products with a brief description.",
+    "desc_4": "Contacts: Your phone number, address, email, and a feedback form.",
+    "desc_5": "Social Media Links: An option to connect with you through popular platforms.",
+    "need_title": "Why do you need a business card website?",
+    "need_desc_1": "Online presence: Your business will be available on the Internet 24/7.",
+    "need_desc_2": "Customer trust: Having a website increases the level of trust in your company.",
+    "need_desc_3": "Ease of communication: Clients can contact you directly through the website.",
+    "need_desc_4": "Promotion: It’s easier to appear in search engines and attract new clients.",
+    "conclusion": "A business card website is your first step to creating a professional online image. It is a tool that helps you present yourself, tell about your business and establish contact with clients."
 
   }
 }
