@@ -43,12 +43,33 @@ const Websites = () => {
         },
         'landing': {
             title: t('landing'),
-            description: t('landing-description'),
-            features: [
-                t('short-description'),
-                t('strong-cta'),
-                t('mobile-version'),
+            description: t('landing_site.what_it_is'),
+            img: '/landing.jpg',
+            backgroundImage: '/landing_bg.jpg',
+            benefits_title: t("landing_site.benefits_title"),
+            benefits_desc: [
+                t("landing_site.benefits_1"),
+                t("landing_site.benefits_3"),
+                t("landing_site.benefits_2"),
+                t("landing_site.benefits_4"),
             ],
+            what_includes_title: t("landing_site.include_title"),
+            includes_item: [
+                t("landing_site.desc_1"),
+                t("landing_site.desc_2"),
+                t("landing_site.desc_3"),
+                t("landing_site.desc_4"),
+                t("landing_site.desc_5"),
+            ],
+            site_example_img: "/langing_ex.jpg",
+            why_need_title: t("landing_site.need_title"),
+            need_desc: [
+                t("landing_site.need_desc_1"),
+                t("landing_site.need_desc_2"),
+                t("landing_site.need_desc_3"),
+                t("landing_site.need_desc_4"),
+            ],
+            conclusion: t("landing_site.conclusion")
         },
     };
 
