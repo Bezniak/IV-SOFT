@@ -42,7 +42,7 @@ const Websites = () => {
             conclusion: t("businessCardWebsite.conclusion")
         },
         'landing': {
-            title: t('landing'),
+            title: t('landing_site.name'),
             description: t('landing_site.what_it_is'),
             img: '/landing.jpg',
             backgroundImage: '/landing_bg.jpg',
@@ -71,6 +71,231 @@ const Websites = () => {
             ],
             conclusion: t("landing_site.conclusion")
         },
+        'corporate-website': {
+            title: t('corporate-website.name'),
+            description: t('corporate-website.what_it_is'),
+            img: '/disness-card.jpeg',
+            backgroundImage: '/business_bg.jpg',
+            benefits_title: t("corporate-website.benefits_title"),
+            benefits_desc: [
+                t("corporate-website.benefits_1"),
+                t("corporate-website.benefits_3"),
+                t("corporate-website.benefits_2"),
+                t("corporate-website.benefits_4"),
+                t("corporate-website.benefits_5"),
+            ],
+            what_includes_title: t("landing_site.include_title"),
+            includes_item: [
+                t("corporate-website.desc_1"),
+                t("corporate-website.desc_2"),
+                t("corporate-website.desc_3"),
+                t("corporate-website.desc_4"),
+                t("corporate-website.desc_5"),
+            ],
+            site_example_img: "/corporate-website_example.jpg",
+            why_need_title: t("corporate-website.need_title"),
+            need_desc: [
+                t("corporate-website.need_desc_1"),
+                t("corporate-website.need_desc_2"),
+                t("corporate-website.need_desc_3"),
+                t("corporate-website.need_desc_4"),
+                t("corporate-website.need_desc_5"),
+            ],
+            conclusion: t("corporate-website.conclusion")
+        },
+        'catalog-site': {
+            title: t('catalog-site.name'),
+            description: t('catalog-site.what_it_is'),
+            img: '/catalog.jpg',
+            backgroundImage: '/catalog_bg.jpg',
+            benefits_title: t("catalog-site.benefits_title"),
+            benefits_desc: [
+                t("catalog-site.benefits_1"),
+                t("catalog-site.benefits_3"),
+                t("catalog-site.benefits_2"),
+                t("catalog-site.benefits_4"),
+            ],
+            what_includes_title: t("catalog-site.include_title"),
+            includes_item: [
+                t("catalog-site.desc_1"),
+                t("catalog-site.desc_2"),
+                t("catalog-site.desc_3"),
+                t("catalog-site.desc_4"),
+            ],
+            site_example_img: "/catalog_example.jpg",
+            why_need_title: t("catalog-site.need_title"),
+            need_desc: [
+                t("catalog-site.need_desc_1"),
+                t("catalog-site.need_desc_2"),
+                t("catalog-site.need_desc_3"),
+                t("catalog-site.need_desc_4"),
+            ],
+            conclusion: t("catalog-site.conclusion")
+        },
+        'online-store': {
+            title: t('online-store.name'),
+            description: t('online-store.what_it_is'),
+            img: '/online_store.jpg',
+            backgroundImage: '/online_store-bg.jpg',
+            benefits_title: t("online-store.benefits_title"),
+            benefits_desc: [
+                t("online-store.benefits_1"),
+                t("online-store.benefits_3"),
+                t("online-store.benefits_2"),
+                t("online-store.benefits_4"),
+            ],
+            what_includes_title: t("online-store.include_title"),
+            includes_item: [
+                t("online-store.desc_1"),
+                t("online-store.desc_2"),
+                t("online-store.desc_3"),
+            ],
+            site_example_img: "/online_store_example.jpg",
+            why_need_title: t("online-store.need_title"),
+            need_desc: [
+                t("online-store.need_desc_1"),
+                t("online-store.need_desc_2"),
+                t("online-store.need_desc_3"),
+                t("online-store.need_desc_4"),
+                t("online-store.need_desc_5"),
+                t("online-store.need_desc_6"),
+                t("online-store.need_desc_7"),
+                t("online-store.need_desc_8"),
+                t("online-store.need_desc_9"),
+                t("online-store.need_desc_10"),
+            ],
+            conclusion: t("online-store.conclusion")
+        },
+        'online-school-websites': {
+            title: t('online-school-websites.name'),
+            description: t('online-school-websites.what_it_is'),
+            img: '/online-school-websites.jpg',
+            backgroundImage: '/online_store-bg.jpg',
+            benefits_title: t("online-school-websites.benefits_title"),
+            benefits_desc: [
+                t("online-school-websites.benefits_1"),
+                t("online-school-websites.benefits_3"),
+                t("online-school-websites.benefits_2"),
+                t("online-school-websites.benefits_4"),
+                t("online-school-websites.benefits_5"),
+            ],
+            what_includes_title: t("online-school-websites.include_title"),
+            includes_item: [
+                t("online-school-websites.desc_1"),
+                t("online-school-websites.desc_2"),
+                t("online-school-websites.desc_3"),
+            ],
+            site_example_img: "/online_school_example.png",
+            why_need_title: t("online-school-websites.need_title"),
+            need_desc: [
+                t("online-school-websites.need_desc_1"),
+                t("online-school-websites.need_desc_2"),
+                t("online-school-websites.need_desc_3"),
+                t("online-school-websites.need_desc_4"),
+                t("online-school-websites.need_desc_5"),
+                t("online-school-websites.need_desc_6"),
+                t("online-school-websites.need_desc_7"),
+                t("online-school-websites.need_desc_8"),
+            ],
+            conclusion: t("online-school-websites.conclusion")
+        },
+        'quiz-site': {
+            title: t('quiz-site.name'),
+            description: t('quiz-site.what_it_is'),
+            img: '/quiz.jpg',
+            backgroundImage: '/quiz_bg.jpg',
+            benefits_title: t("quiz-site.benefits_title"),
+            benefits_desc: [
+                t("quiz-site.benefits_1"),
+                t("quiz-site.benefits_3"),
+                t("quiz-site.benefits_2"),
+                t("quiz-site.benefits_4"),
+            ],
+            what_includes_title: t("quiz-site.include_title"),
+            includes_item: [
+                t("quiz-site.desc_1"),
+                t("quiz-site.desc_2"),
+                t("quiz-site.desc_3"),
+                t("quiz-site.desc_4"),
+            ],
+            site_example_img: "/quix_example.webp",
+            why_need_title: t("quiz-site.need_title"),
+            need_desc: [
+                t("quiz-site.need_desc_1"),
+                t("quiz-site.need_desc_2"),
+                t("quiz-site.need_desc_3"),
+                t("quiz-site.need_desc_4"),
+                t("quiz-site.need_desc_5"),
+                t("quiz-site.need_desc_6"),
+                t("quiz-site.need_desc_7"),
+            ],
+            conclusion: t("quiz-site.conclusion")
+        },
+        'wedding-invitation-website': {
+            title: t('wedding-invitation-website.name'),
+            description: t('wedding-invitation-website.what_it_is'),
+            img: '/wedding.png',
+            backgroundImage: '/quiz_bg.jpg',
+            benefits_title: t("wedding-invitation-website.benefits_title"),
+            benefits_desc: [
+                t("wedding-invitation-website.benefits_1"),
+                t("wedding-invitation-website.benefits_3"),
+                t("wedding-invitation-website.benefits_2"),
+                t("wedding-invitation-website.benefits_4"),
+            ],
+            what_includes_title: t("wedding-invitation-website.include_title"),
+            includes_item: [
+                t("wedding-invitation-website.desc_1"),
+                t("wedding-invitation-website.desc_2"),
+                t("wedding-invitation-website.desc_3"),
+                t("wedding-invitation-website.desc_4"),
+                t("wedding-invitation-website.desc_5"),
+            ],
+            site_example_img: "/quix_example.webp",
+            why_need_title: t("wedding-invitation-website.need_title"),
+            need_desc: [
+                t("wedding-invitation-website.need_desc_1"),
+                t("wedding-invitation-website.need_desc_2"),
+                t("wedding-invitation-website.need_desc_3"),
+                t("wedding-invitation-website.need_desc_4"),
+                t("wedding-invitation-website.need_desc_5"),
+                t("wedding-invitation-website.need_desc_6"),
+            ],
+            conclusion: t("wedding-invitation-website.conclusion")
+        },
+        'websites_for_government_organizations': {
+            title: t('websites_for_government.name'),
+            description: t('websites_for_government.what_it_is'),
+            img: '/wedding.png',
+            backgroundImage: '/quiz_bg.jpg',
+            benefits_title: t("websites_for_government.benefits_title"),
+            benefits_desc: [
+                t("websites_for_government.benefits_1"),
+                t("websites_for_government.benefits_3"),
+                t("websites_for_government.benefits_2"),
+                t("websites_for_government.benefits_4"),
+            ],
+            what_includes_title: t("websites_for_government.include_title"),
+            includes_item: [
+                t("websites_for_government.desc_1"),
+                t("websites_for_government.desc_2"),
+                t("websites_for_government.desc_3"),
+                t("websites_for_government.desc_4"),
+                t("websites_for_government.desc_5"),
+            ],
+            site_example_img: "/quix_example.webp",
+            why_need_title: t("websites_for_government.need_title"),
+            need_desc: [
+                t("websites_for_government.need_desc_1"),
+                t("websites_for_government.need_desc_2"),
+                t("websites_for_government.need_desc_3"),
+                t("websites_for_government.need_desc_4"),
+                t("websites_for_government.need_desc_5"),
+                t("websites_for_government.need_desc_6"),
+                t("websites_for_government.need_desc_7"),
+            ],
+            conclusion: t("websites_for_government.conclusion")
+        },
     };
 
     // Функция для рендеринга контента в зависимости от типа сайта
@@ -96,7 +321,7 @@ const Websites = () => {
                         </div>
                         <div className='md:order-2 xs:order-1 md:w-1/2 w-full h-full'>
                             <img
-                                className="h-full w-full object-cover object-centertransition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+                                className="h-full w-full object-cover"
                                 src={siteContent.img}
                                 alt={`image of ${siteContent.title}`}/>
                         </div>
@@ -116,7 +341,7 @@ const Websites = () => {
                             {siteContent.benefits_desc.map((item, i) => (
                                 <div
                                     key={i}
-                                    className='flex items-center gap-3 text-lg text-white'
+                                    className='flex items-center gap-3 text-lg text-white md:container mx-auto'
                                 >
                                     <IoMdCheckmark className='mb-10 text-yellow-300'/>
                                     <li className='mb-10'>{item}</li>
