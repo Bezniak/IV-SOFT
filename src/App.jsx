@@ -12,6 +12,7 @@ import Faq from "./components/FAQ/Faq.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
 import Price from "./components/Price/Price.jsx";
 import Contacts from "./components/Contacts/Contacts.jsx";
+import Services from "./components/Services/Services.jsx";
 
 
 const Layout = () => {
@@ -74,6 +75,11 @@ const App = () => {
                     path: ROUTES.CONTACTS,
                     element: <Contacts/>
                 },
+                {
+                    path: ROUTES.SERVICE,
+                    element: <Services/>
+                },
+
             ]
         },
     ]);

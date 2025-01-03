@@ -235,7 +235,7 @@ const Websites = () => {
             title: t('wedding-invitation-website.name'),
             description: t('wedding-invitation-website.what_it_is'),
             img: '/wedding.png',
-            backgroundImage: '/quiz_bg.jpg',
+            backgroundImage: '/wedding_bg.jpg',
             benefits_title: t("wedding-invitation-website.benefits_title"),
             benefits_desc: [
                 t("wedding-invitation-website.benefits_1"),
@@ -251,7 +251,7 @@ const Websites = () => {
                 t("wedding-invitation-website.desc_4"),
                 t("wedding-invitation-website.desc_5"),
             ],
-            site_example_img: "/quix_example.webp",
+            site_example_img: "/wedding_example.png",
             why_need_title: t("wedding-invitation-website.need_title"),
             need_desc: [
                 t("wedding-invitation-website.need_desc_1"),
@@ -266,8 +266,8 @@ const Websites = () => {
         'websites_for_government_organizations': {
             title: t('websites_for_government.name'),
             description: t('websites_for_government.what_it_is'),
-            img: '/wedding.png',
-            backgroundImage: '/quiz_bg.jpg',
+            img: '/government.jpg',
+            backgroundImage: '/government_bg.jpg',
             benefits_title: t("websites_for_government.benefits_title"),
             benefits_desc: [
                 t("websites_for_government.benefits_1"),
@@ -283,7 +283,7 @@ const Websites = () => {
                 t("websites_for_government.desc_4"),
                 t("websites_for_government.desc_5"),
             ],
-            site_example_img: "/quix_example.webp",
+            site_example_img: "/government_example.jpg",
             why_need_title: t("websites_for_government.need_title"),
             need_desc: [
                 t("websites_for_government.need_desc_1"),

@@ -235,21 +235,21 @@ const Navbar = () => {
                                 <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
-                                        <NavLink to={ROUTES.BUSINESS_CARD_WEBSITE}
+                                        <NavLink to={'service' + ROUTES.WEBSITE_SUPPORT}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("website_support")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
-                                        <NavLink to={ROUTES.LANDING}
+                                        <NavLink to={'service' + ROUTES.SMM}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("SMM")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
-                                        <NavLink to={ROUTES.CORPORATE_WEBSITE}
+                                        <NavLink to={'service' + ROUTES.LOCALIZATION_SUPPORT}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("localization_and_translation")}

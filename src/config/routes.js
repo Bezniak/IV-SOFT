@@ -6,7 +6,6 @@ export const ROUTES = {
     FAQ: "/faq",
     PORTFOLIO: "/portfolio",
     PRICES: "/price",
-    SERVICES: "/services",
     PRIVACY_POLICY: "/privacy-policy",
 
     SITES: "/sites/:id",
@@ -19,6 +18,11 @@ export const ROUTES = {
     QUIZ_SITE: "/quiz-site",
     WEDDING_INVITATION_WEBSITE: "/wedding-invitation-website",
     WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS: "/websites_for_government_organizations",
+
+    SERVICE: "/service/:id",
+    WEBSITE_SUPPORT: "/website-support",
+    SMM: "/SMM",
+    LOCALIZATION_SUPPORT: "/localization-translation",
     CAREERS: "/careers"
 
 
