@@ -245,7 +245,7 @@ const Navbar = () => {
                                         <NavLink to={'service' + ROUTES.SMM}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
-                                            {t("SMM")}
+                                            {t("SMM_service")}
                                         </NavLink>
                                     </li>
                                     <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>

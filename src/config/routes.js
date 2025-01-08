@@ -23,8 +23,8 @@ export const ROUTES = {
     WEBSITE_SUPPORT: "/website-support",
     SMM: "/SMM",
     LOCALIZATION_SUPPORT: "/localization-translation",
-    CAREERS: "/careers"
-
+    CAREERS: "/careers",
+    BRIEF: "/brief"
 
 
 

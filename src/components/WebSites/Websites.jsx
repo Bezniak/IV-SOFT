@@ -308,7 +308,8 @@ const Websites = () => {
                         <div className='md:order-1 xs:order-2 md:w-1/2 xs:w-full xs:p-4 md:p-10'>
                             <h1 className='text-2xl mb-10 font-bold uppercase dark:text-white xs:mt-10 xs:text-center'>{siteContent.title}</h1>
                             <p className='leading-10 text-justify dark:text-white'>{siteContent.description}</p>
-                            <div className='md:mt-20 xs:mt-10 xs:mb-10 flex md:flex-row xs:flex-col items-center md:gap-12 xs:gap-6 dark:text-white'>
+                            <div
+                                className='md:mt-20 xs:mt-10 xs:mb-10 flex md:flex-row xs:flex-col items-center md:gap-12 xs:gap-6 dark:text-white'>
                                 <NavLink to={ROUTES.PRICES}
                                          className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white'>
                                     {t("find_out_the_cost")}
@@ -395,6 +396,17 @@ const Websites = () => {
                         <p className='md:container xs:p-4 mx-auto leading-10 text-lg text-justify dark:text-white'>
                             {siteContent.conclusion}
                         </p>
+                    </div>
+                    <div className='h-screen flex flex-col justify-center items-center md:container mx-auto'>
+                        <p className="text-2xl text-center leading-10 dark:text-white">
+                            {t("brief.fill_brief")}
+                        </p>
+                        <div className='mt-20'>
+                            <NavLink to={ROUTES.BRIEF}
+                                     className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white dark:text-white'>
+                                {t("brief.brief_button")}
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
             );

@@ -13,6 +13,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
 import Price from "./components/Price/Price.jsx";
 import Contacts from "./components/Contacts/Contacts.jsx";
 import Services from "./components/Services/Services.jsx";
+import Brief from "./components/Brief/Brief.jsx";
 
 
 const Layout = () => {
@@ -78,6 +79,10 @@ const App = () => {
                 {
                     path: ROUTES.SERVICE,
                     element: <Services/>
+                },
+                {
+                    path: ROUTES.BRIEF,
+                    element: <Brief/>
                 },
 
             ]
