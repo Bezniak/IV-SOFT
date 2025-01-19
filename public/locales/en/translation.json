@@ -33,13 +33,15 @@
   "message": "Message...",
   "choose_file": "Attach file",
   "no_file_chosen": "No file chosen",
+  "form_sent_successfully": "Thank you! Your form has been successfully submitted. We will contact you shortly.",
+  "form_send_error": "An error occurred while submitting the form. Please try again later.",
+  "fill_out_the_form": "Fill out the form and we will definitely contact you",
   "discuss_product": "discuss product",
   "company": "Company",
   "about_us": "About",
   "careers": "Careers",
+  "privacy_policy": "Privacy Policy",
   "UNP": "TIN 590210932.",
-  "fill_brief": "Fill out a short survey so that we can estimate the cost and timeframe for your project. This will allow us to better understand your requirements and offer a suitable solution.",
-  "brief_button": "Fill out the brief",
   "home_page": {
     "easy_to_create": "It is Easy to Create Website With US",
     "promote_company": "It is Easy to Promote Company By US",
@@ -392,5 +394,10 @@
     "safety_requirements": "Increasing engagement. We’ll grab attention to your content and create an active community.",
     "respond_to_customer": "Attracting new clients. We’ll set up interactions with your audience that lead to sales.",
     "work_quickly": "Creating a positive image. We’ll help you earn customer trust through quality content and feedback."
+  },
+  "brief": {
+    "title": "Leave a request for our services",
+    "desc": "Fill out a simple form so that we can contact you and discuss all the details. It will only take a couple of minutes!",
+    "brief_button": "Fill out the brief"
   }
 }

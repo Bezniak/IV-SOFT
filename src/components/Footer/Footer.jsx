@@ -64,16 +64,49 @@ const Footer = () => {
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Discord Server</a>
+                                <NavLink to={'sites' + ROUTES.BUSINESS_CARD_WEBSITE} className="hover:underline" onClick={handleClick}>
+                                    {t("business_card_website")}
+                                </NavLink>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Twitter</a>
+                                <NavLink to={'sites' + ROUTES.LANDING} className="hover:underline" onClick={handleClick}>
+                                    {t("landing")}
+                                </NavLink>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Facebook</a>
+                                <NavLink to={'sites' + ROUTES.CORPORATE_WEBSITE} className="hover:underline" onClick={handleClick}>
+                                    {t("corporate_website")}
+                                </NavLink>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Contact Us</a>
+                                <NavLink to={'sites' + ROUTES.CATALOG_SITE} className="hover:underline" onClick={handleClick}>
+                                    {t("catalog_site")}
+                                </NavLink>
+                            </li>
+                            <li className="mb-4">
+                                <NavLink to={'sites' + ROUTES.ONLINE_STORE} className="hover:underline" onClick={handleClick}>
+                                    {t("online_store")}
+                                </NavLink>
+                            </li>
+                            <li className="mb-4">
+                                <NavLink to={'sites' + ROUTES.ONLINE_SCHOOL_WEBSITES} className="hover:underline" onClick={handleClick}>
+                                    {t("online_school_websites")}
+                                </NavLink>
+                            </li>
+                            <li className="mb-4">
+                                <NavLink to={'sites' + ROUTES.QUIZ_SITE} className="hover:underline" onClick={handleClick}>
+                                    {t("quiz_site")}
+                                </NavLink>
+                            </li>
+                            <li className="mb-4">
+                                <NavLink to={'sites' + ROUTES.WEDDING_INVITATION_WEBSITE} className="hover:underline" onClick={handleClick}>
+                                    {t("wedding_invitation_website")}
+                                </NavLink>
+                            </li>
+                            <li className="mb-4">
+                                <NavLink to={'sites' + ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS} className="hover:underline" onClick={handleClick}>
+                                    {t("websites_for_government_organizations")}
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -83,13 +116,19 @@ const Footer = () => {
                         </h2>
                         <ul className="text-gray-500 dark:text-gray-400 font-medium">
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Privacy Policy</a>
+                                <NavLink to={'service' + ROUTES.WEBSITE_SUPPORT} className="hover:underline" onClick={handleClick}>
+                                    {t("website_support")}
+                                </NavLink>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Licensing</a>
+                                <NavLink to={'service' + ROUTES.SMM} className="hover:underline" onClick={handleClick}>
+                                    {t("SMM_service")}
+                                </NavLink>
                             </li>
                             <li className="mb-4">
-                                <a href="#" className="hover:underline">Terms &amp; Conditions</a>
+                                <NavLink to={'service' + ROUTES.LOCALIZATION_SUPPORT} className="hover:underline" onClick={handleClick}>
+                                    {t("localization_and_translation")}
+                                </NavLink>
                             </li>
                         </ul>
                     </div>
@@ -97,8 +136,19 @@ const Footer = () => {
 
                 <div className="px-4 py-6 bg-gray-900 md:flex md:items-center md:justify-between">
                     <span className="text-base text-gray-500 dark:text-gray-300 sm:text-center">
-                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>IV-SOFT™</NavLink>. {t("UNP")} {t("all_right_reserved")}
+                        © {year} <NavLink to={ROUTES.HOME} onClick={handleClick}>IV-SOFT™</NavLink>.
+                        &nbsp;
+                        <a href="https://contragent.by/unp/590210932"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="hover:text-white transition"
+                        >
+                            {t("UNP")}
+                        </a>
+                        &nbsp;
+                        {t("all_right_reserved")}
                     </span>
+
                     <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
                         <a href="https://www.facebook.com/vanja.besnjak/" target='_blank'
                            className="text-gray-400 hover:text-white">

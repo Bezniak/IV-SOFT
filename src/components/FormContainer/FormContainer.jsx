@@ -16,7 +16,9 @@ const FormContainer = () => {
                     <div className="md:w-6/12 xs:w-full rounded-lg">
                         <img className="rounded" src="/conclusion.jpg" alt="conclusion"/>
                     </div>
-                    <Form/>
+                    <div className='md:w-6/12 xs:w-full'>
+                        <Form/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useTranslation} from "react-i18next";
 import {NavLink, useParams} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
 import {GiCheckMark} from "react-icons/gi";
 import {IoMdCheckmark} from "react-icons/io";
+import ModalWindow from "../ModalWindow/ModalWindow.jsx";
 
 const Services = () => {
     const {id} = useParams(); // Получаем параметр из URL
-    const {t} = useTranslation(); // Получаем функцию t для перевода
+    const {t} = useTranslation();
+    const [isModalWindowVisible, setModalWindowVisible] = useState(false);
 
     // Объект с полным контентом для каждого типа сайта
     const content = {
@@ -186,7 +188,9 @@ const Services = () => {
                                     {t("find_out_the_cost")}
                                 </NavLink>
                                 <button
-                                    className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white'>
+                                    className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white'
+                                    onClick={() => setModalWindowVisible(true)}
+                                >
                                     {t("get_consultation")}
                                 </button>
                             </div>
@@ -256,14 +260,21 @@ const Services = () => {
 
 
                     <div className='h-screen flex flex-col justify-center items-center md:container mx-auto'>
-                        <p className="text-2xl text-center leading-10 dark:text-white">
-                            {t("brief.fill_brief")}
+                        <h2 className='text-3xl pb-8 dark:text-white'>
+                            {t("brief.title")}
+                        </h2>
+                        <p className="text-lg text-center leading-10 dark:text-white">
+                            {t("brief.desc")}
                         </p>
                         <div className='mt-20'>
-                            <NavLink to={ROUTES.BRIEF}
-                                     className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white dark:text-white'>
+                            <a
+                                href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white dark:text-white'
+                            >
                                 {t("brief.brief_button")}
-                            </NavLink>
+                            </a>
                         </div>
                     </div>
 
@@ -277,6 +288,11 @@ const Services = () => {
     return (
         <div>
             {renderContent()}
+            {isModalWindowVisible &&
+                <ModalWindow onClose={() => setModalWindowVisible(false)}
+                             isModalWindowVisible={isModalWindowVisible}
+                />
+            }
         </div>
     );
 };
