@@ -115,6 +115,7 @@ const Navbar = () => {
                     <ul className="flex flex-col font-medium p-4 md:p-0 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
                         <li>
                             <NavLink to={ROUTES.HOME}
+                                     onClick={()=> setIsMobileMenuOpen(false)}
                                      className="block py-2 px-3 md:p-0 text-white transition"
                                      aria-current="page">
                                 {t("home")}
@@ -143,63 +144,63 @@ const Navbar = () => {
                             >
                                 <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.BUSINESS_CARD_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("business_card_website")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.LANDING}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("landing")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.CORPORATE_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("corporate_website")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.CATALOG_SITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("catalog_site")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.ONLINE_STORE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_store")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.ONLINE_SCHOOL_WEBSITES}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("online_school_websites")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.QUIZ_SITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("quiz_site")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.WEDDING_INVITATION_WEBSITE}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("wedding_invitation_website")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsSitesDropdownOpen(!isSitesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'sites' + ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS}
                                                  className="block px-4 py-2 hover:bg-gray-600 hover:text-white"
                                         >
@@ -234,21 +235,21 @@ const Navbar = () => {
                             >
                                 <ul className="py-2 text-sm text-gray-400 bg-gray-900"
                                     aria-labelledby="dropdownLargeButton">
-                                    <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'service' + ROUTES.WEBSITE_SUPPORT}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("website_support")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'service' + ROUTES.SMM}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
                                             {t("SMM_service")}
                                         </NavLink>
                                     </li>
-                                    <li onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}>
+                                    <li onClick={()=> setIsMobileMenuOpen(false)}>
                                         <NavLink to={'service' + ROUTES.LOCALIZATION_SUPPORT}
                                                  className="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                                         >
@@ -262,6 +263,7 @@ const Navbar = () => {
 
                         <li>
                             <NavLink to={ROUTES.PORTFOLIO}
+                                     onClick={()=> setIsMobileMenuOpen(false)}
                                      className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition"
                             >
                                 {t("portfolio")}
@@ -269,18 +271,21 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink to={ROUTES.PRICES}
+                                     onClick={()=> setIsMobileMenuOpen(false)}
                                      className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("prices")}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.FAQ}
+                                     onClick={()=> setIsMobileMenuOpen(false)}
                                      className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("Faq")}
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to={ROUTES.CONTACTS}
+                                     onClick={()=> setIsMobileMenuOpen(false)}
                                      className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition">
                                 {t("contacts")}
                             </NavLink>

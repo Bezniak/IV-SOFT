@@ -42,7 +42,7 @@ const Faq = () => {
                 <h1 className="text-3xl md:mb-16 xs:mb-6 text-center font-bold">
                     {t("FAQ.title")}
                 </h1>
-                <p className="text-lg mb-16 text-center md:w-1/2 mx-auto">
+                <p className="text-lg md:mb-16 xs:pb-6 text-center md:w-1/2 mx-auto">
                     {t("FAQ.desc")}
                 </p>
                 <div

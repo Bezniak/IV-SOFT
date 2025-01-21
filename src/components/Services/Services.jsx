@@ -203,8 +203,8 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <div className='md:container mx-auto pt-20 pb-20'>
-                        <h1 className='pb-10 text-3xl dark:text-white'>{siteContent.websiteSupportTitle}</h1>
+                    <div className='md:container mx-auto md:pt-20 xs:pt-0 pb-20'>
+                        <h1 className='pb-10 text-3xl dark:text-white text-center'>{siteContent.websiteSupportTitle}</h1>
                         <div className='flex gap-20 flex-wrap justify-center'>
                             {siteContent.service_include.map((item, index) => (
                                 <div

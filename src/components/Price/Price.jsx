@@ -244,7 +244,7 @@ const Price = () => {
                     <p className='text-lg'>
                         {t("priceDesc_1")}
                     </p>
-                    <p className='text-lg mb-16'>
+                    <p className='text-lg md:mb-16 xs:mb-6'>
                         {t("priceDesc_2")}
                     </p>
                 </div>
