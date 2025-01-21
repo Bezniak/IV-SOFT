@@ -31,9 +31,9 @@ const Contacts = () => {
             exit="hidden"
             variants={staggerContainer}
         >
-            <div className='md:container mx-auto pt-40 pb-40 md:px-12'>
+            <div className='md:container mx-auto md:pt-40 xs:pt-32 md:pb-40 xs:pb-20 md:px-12 xs:p-4 md:p-0'>
                 <motion.h1
-                    className='text-5xl mb-20 font-bold'
+                    className='md:text-5xl xs:text-4xl md:text-left xs:text-center mb-20 font-bold'
                     variants={fadeInUp}
                 >
                     {t("contactsPage.mainTitle")}
