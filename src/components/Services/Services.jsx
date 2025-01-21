@@ -233,7 +233,7 @@ const Services = () => {
 
 
                     <div
-                        className='h-dvh pt-20 pb-20 flex flex-col justify-center items-center'
+                        className='md:h-dvh xs:h-fit pt-20 pb-20 flex flex-col justify-center items-center'
                         style={{
                             backgroundImage: `url(${siteContent.backgroundImage})`,
                             backgroundSize: 'cover',
@@ -259,7 +259,7 @@ const Services = () => {
                     </div>
 
 
-                    <div className='h-screen flex flex-col justify-center items-center md:container mx-auto'>
+                    <div className='md:h-screen xs:h-fit pt-20 pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
                         <h2 className='text-3xl pb-8 dark:text-white'>
                             {t("brief.title")}
                         </h2>

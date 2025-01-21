@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
 import {FaInstagramSquare, FaViber} from "react-icons/fa";
 import {FaTelegram} from "react-icons/fa6";
-import {MdAlternateEmail} from "react-icons/md";
+import {MdOutlineMailOutline} from "react-icons/md";
 import {handleClick} from "../../common/helpers.js";
 
 const Footer = () => {
@@ -186,7 +186,7 @@ const Footer = () => {
                         </a>
                         <a href="mailto:ivsoft.ask@gmail.com" target='_blank'
                            className="text-gray-400 hover:text-white">
-                            <MdAlternateEmail className="w-6 h-6"/>
+                            <MdOutlineMailOutline className="w-6 h-6"/>
                         </a>
                     </div>
                 </div>
