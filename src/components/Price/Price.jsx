@@ -12,7 +12,7 @@ const Price = () => {
         {
             id: 1,
             site_name: t("landing"),
-            smallDesc: t("landing_site.small_desc_price"),
+            small_desc: t("landing_site.small_desc_price"),
             desc: [
                 t("landing_site.additionInfo_1"),
                 t("landing_site.additionInfo_2"),
@@ -31,7 +31,7 @@ const Price = () => {
         {
             id: 2,
             site_name: t("business_card_website"),
-            smallDesc: t("businessCardWebsite.small_desc_price"),
+            small_desc: t("businessCardWebsite.small_desc_price"),
             desc: [
                 t("businessCardWebsite.additionInfo_1"),
                 t("businessCardWebsite.additionInfo_2"),
@@ -49,7 +49,7 @@ const Price = () => {
         {
             id: 3,
             site_name: t("corporate_website"),
-            smallDesc: t("corporate-website.small_desc_price"),
+            small_desc: t("corporate-website.small_desc_price"),
             desc: [
                 t("corporate-website.additionInfo_1"),
                 t("corporate-website.additionInfo_2"),
@@ -198,7 +198,7 @@ const Price = () => {
                 t("SMM.additionInfo_5"),
             ],
             link: `/service${ROUTES.SMM}`,
-            isPopular: false,
+            isPopular: true,
             price: t("SMM.price")
         },
         {
@@ -252,7 +252,7 @@ const Price = () => {
                             )}
                             <h5 className="text-3xl font-bold mb-4">{item.site_name}</h5>
                             <p className="text-xl font-semibold mb-5">{item.price}</p>
-                            <p className="text-base mb-7">{item.small_desc}</p>
+                            <p className="text-base mb-7 text-justify">{item.small_desc}</p>
                             <ul className="mb-7 space-y-4 text-base">
                                 {item.desc.map((desc, idx) => (
                                     <li key={idx} className="flex items-start">
@@ -262,7 +262,7 @@ const Price = () => {
                             </ul>
                             <NavLink
                                 to={item.link}
-                                className={`inline-block px-6 py-4 mt-auto rounded-lg ${
+                                className={`inline-block px-6 py-4 mt-auto rounded-lg uppercase text-center ${
                                     item.isPopular
                                         ? 'text-black bg-white hover:bg-gray-700 transition'
                                         : 'text-white bg-black hover:bg-gray-700 transition'
