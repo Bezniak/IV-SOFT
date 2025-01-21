@@ -1,10 +1,156 @@
 import React from 'react';
+import { FaFileAlt, FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import Form from "../FormContainer/Form.jsx";
+import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+};
+
+const staggerContainer = {
+    hidden: { opacity: 1 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2
+        }
+    }
+};
 
 const Contacts = () => {
+    const { t } = useTranslation();
+
     return (
-        <div>
-            Contacts
-        </div>
+        <motion.div
+            className='dark:bg-gray-900 dark:text-white'
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={staggerContainer}
+        >
+            <div className='md:container mx-auto pt-40 pb-40 md:px-12'>
+                <motion.h1
+                    className='text-5xl mb-20 font-bold'
+                    variants={fadeInUp}
+                >
+                    {t("contactsPage.mainTitle")}
+                </motion.h1>
+                <div className='flex md:flex-row xs:flex-col justify-start items-start gap-24'>
+                    <motion.div className='flex-1' variants={fadeInUp}>
+                        <h1 className='text-3xl mb-6'>
+                            {t('contactsPage.contactsTitle')}
+                        </h1>
+                        <p className='text-lg'>
+                            {t('contactsPage.contactsDescription')}
+                        </p>
+                        <motion.div variants={fadeInUp}>
+                            <Form />
+                        </motion.div>
+                    </motion.div>
+                    <motion.div className='flex-1 flex flex-col gap-10' variants={staggerContainer}>
+                        <motion.div variants={fadeInUp}>
+                            <h2 className='text-3xl mb-6'>
+                                {t('fill_brief')}
+                            </h2>
+                            <a
+                                href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className='flex items-center justify-start text-lg uppercase text-orange-500'
+                            >
+                                <FaFileAlt className='mr-2 text-2xl'/>
+                                {t("brief_form")}
+                            </a>
+                            <p className='mt-6'>
+                                {t('calculate_budget')}
+                            </p>
+                        </motion.div>
+                        <motion.div variants={fadeInUp}>
+                            <h2 className='text-3xl mb-6'>
+                                {t('contacts')}
+                            </h2>
+                            <ul>
+                                <li className='flex items-center mb-4'>
+                                    <FaPhone className='text-lg mr-3 text-orange-500'/>
+                                    <a href="tel:+375295210417" className='text-lg'>
+                                        +375 (29) 521-04-17
+                                    </a>
+                                </li>
+                                <li className='flex items-center mb-4'>
+                                    <FaEnvelope className='text-lg mr-3 text-orange-500'/>
+                                    <a
+                                        href="mailto:ivsoft.ask@gmail.com"
+                                        className='text-lg'
+                                    >
+                                        ivsoft.ask@gmail.com
+                                    </a>
+                                </li>
+                                <li className='flex items-center mb-4'>
+                                    <FaTelegramPlane className='text-lg mr-3 text-orange-500'/>
+                                    <a
+                                        href="https://t.me/ivan.bezniak"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        className='text-lg'
+                                    >
+                                        {t("telegram")}
+                                    </a>
+                                </li>
+                                <li className='flex items-center mb-4'>
+                                    <FaWhatsapp className='text-lg mr-3 text-orange-500'/>
+                                    <a
+                                        href="https://wa.me/375295210417"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        className='text-lg'
+                                    >
+                                        {t("whats_app")}
+                                    </a>
+                                </li>
+                            </ul>
+                        </motion.div>
+                        <motion.div className='w-full' variants={fadeInUp}>
+                            <h2 className='text-3xl mb-6'>
+                                {t('address')}
+                            </h2>
+                            <p className='text-lg'>
+                                {t("address_desc")}
+                            </p>
+                        </motion.div>
+                        <motion.div variants={fadeInUp}>
+                            <h2 className='text-3xl mb-6'>
+                                {t('socialMedia')}
+                            </h2>
+                            <div className='flex gap-8'>
+                                <a href="https://www.instagram.com/ivan_bezniak/"
+                                   target='_blank'
+                                   className='border w-fit p-4 rounded-full border-black dark:border-white'
+                                >
+                                    <FaInstagram className='text-2xl text-orange-500'/>
+                                </a>
+                                <a href="https://www.facebook.com/vanja.besnjak/"
+                                   target='_blank'
+                                   className='border w-fit p-4 rounded-full border-black dark:border-white'
+                                >
+                                    <FaFacebook className='text-2xl text-orange-500'/>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/ivan-bezniak-2634a11a0/"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='border w-fit p-4 rounded-full border-black dark:border-white'
+                                >
+                                    <FaLinkedin className='text-2xl text-orange-500'/>
+                                </a>
+                            </div>
+                        </motion.div>
+                    </motion.div>
+                </div>
+            </div>
+        </motion.div>
     );
 };
 

@@ -2,11 +2,14 @@ import React, {useState} from 'react';
 import {useForm} from 'react-hook-form';
 import {useTranslation} from "react-i18next";
 import axios from 'axios';
+import {NavLink} from "react-router-dom";
+import {ROUTES} from "../../config/routes.js";
 
 const Form = () => {
     const {t} = useTranslation();
     const {register, handleSubmit, formState: {errors}, reset} = useForm();
     const [status, setStatus] = useState(null); // null, "success", "error"
+    const [consentGiven, setConsentGiven] = useState(false);
 
     const onSubmit = async (data) => {
         const chatId = import.meta.env.VITE_TELEGRAM_CHAT_ID;
@@ -28,6 +31,7 @@ const Form = () => {
             });
             setStatus("success");
             reset();
+            setConsentGiven(false); // Сбрасываем чекбокс
         } catch (error) {
             console.error("Error sending data to Telegram:", error);
             setStatus("error");
@@ -105,11 +109,28 @@ const Form = () => {
                         />
                     </div>
 
+                    {/* Чекбокс согласия */}
+                    <div className="flex items-center space-x-2">
+                        <input
+                            id="consent"
+                            type="checkbox"
+                            checked={consentGiven}
+                            onChange={(e) => setConsentGiven(e.target.checked)}
+                            className="w-6 h-6 text-black dark:text-orange-500 focus:ring-black dark:focus:ring-orange-500 border-gray-300 rounded"
+                        />
+                        <label htmlFor="consent" className="text-sm hover:text-orange-500 transition">
+                            <NavLink to={ROUTES.PRIVACY_POLICY}>
+                                {t("consent_text")}
+                            </NavLink>
+                        </label>
+                    </div>
+
                     {/* Кнопка отправки */}
                     <div className="text-right">
                         <button
                             type="submit"
-                            className="md:w-fit xs:w-fit py-3 px-5 md:mt-10 bg-black uppercase dark:bg-white text-white font-semibold rounded-md hover:bg-gray-700 dark:hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white dark:text-black"
+                            disabled={!consentGiven}
+                            className={`md:w-fit xs:w-fit py-3 px-5 md:mt-10 bg-black uppercase dark:bg-white text-white font-semibold rounded-md hover:bg-gray-700 dark:hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white dark:text-black ${!consentGiven ? 'opacity-50 cursor-not-allowed' : ''}`}
                         >
                             {t("discuss_product")}
                         </button>

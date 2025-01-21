@@ -66,9 +66,13 @@ const OurMission = () => {
                 <p className="text-left xs:mt-6 md:mt-52 xs:text-sm md:text-base xs:w-full md:w-3/4 mx-auto dark:text-white tracking-wider">
                     {t("home_page.mission_desc")}
                 </p>
-                <button className="md:mt-20 xs:mt-10 mb-10 border py-2 px-4 border-black rounded hover:bg-black hover:text-white transition dark:border-white dark:text-white">
-                    {t("home_page.leave_message")}
-                </button>
+                    <a
+                        href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="md:mt-20 block w-fit mx-auto xs:mt-10 mb-10 border py-2 px-4 border-black rounded hover:bg-black hover:text-white transition dark:border-white dark:text-white">
+                        {t("home_page.leave_message")}
+                    </a>
             </motion.div>
         </div>
     );
