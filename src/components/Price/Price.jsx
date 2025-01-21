@@ -3,6 +3,7 @@ import {useTranslation} from "react-i18next";
 import {ROUTES} from "../../config/routes.js";
 import {NavLink} from "react-router-dom";
 import {handleClick} from "../../common/helpers.js";
+import { motion } from "framer-motion";
 
 const Price = () => {
     const {t} = useTranslation();
@@ -218,6 +219,20 @@ const Price = () => {
         }
     ];
 
+    // Настройки анимации
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    };
+
 
     return (
         <div className='dark:bg-gray-900 dark:text-white'>
@@ -233,16 +248,21 @@ const Price = () => {
                         {t("priceDesc_2")}
                     </p>
                 </div>
-                <div
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 px-6">
+                <motion.div
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 px-6"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
                     {data.map((item) => (
-                        <div
+                        <motion.div
                             key={item.id}
                             className={`relative ${
                                 item.isPopular
                                     ? 'bg-gray-900 dark:bg-gray-800 border border-gray-700 dark:border-gray-900 shadow-lg text-white'
                                     : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white'
                             } rounded-lg p-12 flex flex-col`}
+                            variants={itemVariants}
                         >
                             {item.isPopular && (
                                 <div
@@ -250,8 +270,8 @@ const Price = () => {
                                     {t("popular")}
                                 </div>
                             )}
-                            <h5 className="text-3xl font-bold mb-4">{item.site_name}</h5>
-                            <p className="text-xl font-semibold mb-5">{item.price}</p>
+                            <h5 className="text-2xl font-bold mb-4">{item.site_name}</h5>
+                            <p className="text-2xl font-semibold mb-5 text-orange-500">{item.price}</p>
                             <p className="text-base mb-7 text-justify">{item.small_desc}</p>
                             <ul className="mb-7 space-y-4 text-base">
                                 {item.desc.map((desc, idx) => (
@@ -271,12 +291,11 @@ const Price = () => {
                             >
                                 {t("more_details")}
                             </NavLink>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
-
     );
 };
 

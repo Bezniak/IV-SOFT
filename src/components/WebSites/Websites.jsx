@@ -4,6 +4,8 @@ import {useTranslation} from 'react-i18next';
 import {IoMdCheckmark} from "react-icons/io";
 import {ROUTES} from "../../config/routes.js";
 import ModalWindow from "../ModalWindow/ModalWindow.jsx"; // Импортируем useTranslation
+import {Parallax} from 'react-parallax';
+
 
 const Websites = () => {
     const {id} = useParams();
@@ -332,29 +334,34 @@ const Websites = () => {
                                 alt={`image of ${siteContent.title}`}/>
                         </div>
                     </div>
-                    <div
-                        className='h-dvh pt-20 pb-20 flex flex-col justify-center items-center'
-                        style={{
-                            backgroundImage: `url(${siteContent.backgroundImage})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                            padding: '20px',
-                        }}
+                    <Parallax
+                        bgImage={siteContent.backgroundImage}
+                        bgImageAlt="background-image"
+                        strength={700} // Controls the strength of the parallax effect
                     >
-                        <h2 className='text-2xl mb-5 text-white font-bold'>{siteContent.benefits_title}</h2>
-                        <ul>
-                            {siteContent.benefits_desc.map((item, i) => (
-                                <div
-                                    key={i}
-                                    className='flex items-center gap-3 text-lg text-white md:container mx-auto'
-                                >
-                                    <IoMdCheckmark className='mb-10 text-yellow-300'/>
-                                    <li className='mb-10'>{item}</li>
-                                </div>
-                            ))}
-                        </ul>
-                    </div>
+                        <div
+                            className='h-dvh pt-20 pb-20 flex flex-col justify-center items-center'
+                            style={{
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                backgroundRepeat: 'no-repeat',
+                                padding: '20px',
+                            }}
+                        >
+                            <h2 className='text-2xl mb-5 text-white font-bold'>{siteContent.benefits_title}</h2>
+                            <ul>
+                                {siteContent.benefits_desc.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className='flex items-center gap-3 text-lg text-white md:container mx-auto'
+                                    >
+                                        <IoMdCheckmark className='mb-10 text-yellow-300'/>
+                                        <li className='mb-10'>{item}</li>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
+                    </Parallax>
                     <div className='flex md:flex-row xs:flex-col mb-10'>
                         <div className='md:w-1/2 xs:w-full pt-16 pl-4 dark:text-white'>
                             <h2 className='text-2xl pl-8 pb-4 font-bold'>
