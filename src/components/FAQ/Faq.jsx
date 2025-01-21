@@ -1,31 +1,29 @@
 import React, {useRef, useState} from 'react';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { motion, useInView } from "framer-motion";
-
 
 const Faq = () => {
     const [activeId, setActiveId] = useState(null);
-    const {t} = useTranslation();
-
+    const { t } = useTranslation();
 
     const data = [
-        {id: 1, ask: t("FAQ.ask_1"), answer: t("FAQ.answer_1")},
-        {id: 2, ask: t("FAQ.ask_2"), answer: t("FAQ.answer_2")},
-        {id: 3, ask: t("FAQ.ask_3"), answer: t("FAQ.answer_3")},
-        {id: 4, ask: t("FAQ.ask_4"), answer: t("FAQ.answer_4")},
-        {id: 5, ask: t("FAQ.ask_5"), answer: t("FAQ.answer_5")},
-        {id: 6, ask: t("FAQ.ask_6"), answer: t("FAQ.answer_6")},
-        {id: 7, ask: t("FAQ.ask_7"), answer: t("FAQ.answer_7")},
-        {id: 8, ask: t("FAQ.ask_8"), answer: t("FAQ.answer_8")},
-        {id: 9, ask: t("FAQ.ask_9"), answer: t("FAQ.answer_9")},
-        {id: 10, ask: t("FAQ.ask_10"), answer: t("FAQ.answer_10")},
-        {id: 11, ask: t("FAQ.ask_11"), answer: t("FAQ.answer_11")},
-        {id: 12, ask: t("FAQ.ask_12"), answer: t("FAQ.answer_12")},
-        {id: 13, ask: t("FAQ.ask_13"), answer: t("FAQ.answer_13")},
-        {id: 14, ask: t("FAQ.ask_14"), answer: t("FAQ.answer_14")},
-        {id: 15, ask: t("FAQ.ask_15"), answer: t("FAQ.answer_15")},
-        {id: 16, ask: t("FAQ.ask_16"), answer: t("FAQ.answer_16")},
-    ]
+        { id: 1, ask: t("FAQ.ask_1"), answer: t("FAQ.answer_1") },
+        { id: 2, ask: t("FAQ.ask_2"), answer: t("FAQ.answer_2") },
+        { id: 3, ask: t("FAQ.ask_3"), answer: t("FAQ.answer_3") },
+        { id: 4, ask: t("FAQ.ask_4"), answer: t("FAQ.answer_4") },
+        { id: 5, ask: t("FAQ.ask_5"), answer: t("FAQ.answer_5") },
+        { id: 6, ask: t("FAQ.ask_6"), answer: t("FAQ.answer_6") },
+        { id: 7, ask: t("FAQ.ask_7"), answer: t("FAQ.answer_7") },
+        { id: 8, ask: t("FAQ.ask_8"), answer: t("FAQ.answer_8") },
+        { id: 9, ask: t("FAQ.ask_9"), answer: t("FAQ.answer_9") },
+        { id: 10, ask: t("FAQ.ask_10"), answer: t("FAQ.answer_10") },
+        { id: 11, ask: t("FAQ.ask_11"), answer: t("FAQ.answer_11") },
+        { id: 12, ask: t("FAQ.ask_12"), answer: t("FAQ.answer_12") },
+        { id: 13, ask: t("FAQ.ask_13"), answer: t("FAQ.answer_13") },
+        { id: 14, ask: t("FAQ.ask_14"), answer: t("FAQ.answer_14") },
+        { id: 15, ask: t("FAQ.ask_15"), answer: t("FAQ.answer_15") },
+        { id: 16, ask: t("FAQ.ask_16"), answer: t("FAQ.answer_16") },
+    ];
 
     const toggleActive = (id) => {
         setActiveId((prevId) => (prevId === id ? null : id));
@@ -52,17 +50,17 @@ const Faq = () => {
                 >
                     {data.map((item) => {
                         const ref = useRef(null);
-                        const isInView = useInView(ref, {once: true});
+                        const isInView = useInView(ref, { once: true }); // This should be outside the `.map()` function
 
                         return (
                             <motion.div
-                                ref={ref}
+                                ref={ref} // This works fine here
                                 key={item.id}
                                 className="mb-10"
                                 initial="hidden"
                                 animate={isInView ? "visible" : "hidden"}
                                 variants={containerVariants}
-                                transition={{duration: 0.6, ease: "easeOut"}}
+                                transition={{ duration: 0.6, ease: "easeOut" }}
                             >
                                 <h2 id={`accordion-heading-${item.id}`}>
                                     <button
