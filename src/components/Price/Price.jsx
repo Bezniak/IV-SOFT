@@ -166,7 +166,6 @@ const Price = () => {
                 t("websites_for_government.additionInfo_6"),
                 t("websites_for_government.additionInfo_7"),
                 t("websites_for_government.additionInfo_8"),
-                t("websites_for_government.additionInfo_9"),
             ],
             link: `/sites${ROUTES.WEBSITE_FOR_GOVERNMENT_ORGANIZATIONS}`,
             isPopular: false,

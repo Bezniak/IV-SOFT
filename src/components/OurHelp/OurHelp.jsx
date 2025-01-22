@@ -89,7 +89,7 @@ const OurHelp = () => {
                                 {t("home_page.seo_settings_title")}
                             </h5>
                             <p className="mb-3 text-gray-700 dark:text-gray-400">
-                                {t("home_page.hosting_help_desc")}
+                                {t("home_page.seo_settings_desc")}
                             </p>
                         </div>
                     </motion.div>

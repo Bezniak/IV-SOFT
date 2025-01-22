@@ -14,7 +14,6 @@ const Faq = () => {
         { id: 5, ask: t("FAQ.ask_5"), answer: t("FAQ.answer_5") },
         { id: 6, ask: t("FAQ.ask_6"), answer: t("FAQ.answer_6") },
         { id: 7, ask: t("FAQ.ask_7"), answer: t("FAQ.answer_7") },
-        { id: 8, ask: t("FAQ.ask_8"), answer: t("FAQ.answer_8") },
         { id: 9, ask: t("FAQ.ask_9"), answer: t("FAQ.answer_9") },
         { id: 10, ask: t("FAQ.ask_10"), answer: t("FAQ.answer_10") },
         { id: 11, ask: t("FAQ.ask_11"), answer: t("FAQ.answer_11") },

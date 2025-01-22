@@ -90,7 +90,6 @@ const AboutUs = () => {
                             <h2 className="text-2xl text-left p-4">{t("aboutUs.why_choose_us")}</h2>
                             <p className="text-base text-left mt-4">{t("aboutUs.why_choose_us_desc_1")}</p>
                             <p className="text-base text-left mt-4">{t("aboutUs.why_choose_us_desc_2")}</p>
-                            <p className="text-base text-left mt-4">{t("aboutUs.why_choose_us_desc_3")}</p>
                         </div>
                     </div>
                 </AnimatedSection>

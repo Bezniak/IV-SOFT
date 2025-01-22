@@ -4,6 +4,7 @@ import {useTranslation} from "react-i18next";
 import axios from 'axios';
 import {NavLink} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
+import {handleClick} from "../../common/helpers.js";
 
 const Form = () => {
     const {t} = useTranslation();
@@ -119,7 +120,7 @@ const Form = () => {
                             className="w-6 h-6 mr-3 text-black dark:text-orange-500 focus:ring-black dark:focus:ring-orange-500 border-gray-300 rounded"
                         />
                         <label htmlFor="consent" className="text-sm hover:text-orange-500 transition">
-                            <NavLink to={ROUTES.PRIVACY_POLICY}>
+                            <NavLink to={ROUTES.PRIVACY_POLICY} onClick={handleClick}>
                                 {t("consent_text")}
                             </NavLink>
                         </label>

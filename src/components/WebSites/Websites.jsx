@@ -6,6 +6,7 @@ import {ROUTES} from "../../config/routes.js";
 import ModalWindow from "../ModalWindow/ModalWindow.jsx"; // Импортируем useTranslation
 import {Parallax} from 'react-parallax';
 import Brief from "../Brief/Brief.jsx";
+import {handleClick} from "../../common/helpers.js";
 
 
 const Websites = () => {
@@ -163,12 +164,10 @@ const Websites = () => {
                 t("online-store.need_desc_2"),
                 t("online-store.need_desc_3"),
                 t("online-store.need_desc_4"),
-                t("online-store.need_desc_5"),
                 t("online-store.need_desc_6"),
                 t("online-store.need_desc_7"),
                 t("online-store.need_desc_8"),
                 t("online-store.need_desc_9"),
-                t("online-store.need_desc_10"),
             ],
             conclusion: t("online-store.conclusion")
         },
@@ -232,8 +231,6 @@ const Websites = () => {
                 t("quiz-site.need_desc_3"),
                 t("quiz-site.need_desc_4"),
                 t("quiz-site.need_desc_5"),
-                t("quiz-site.need_desc_6"),
-                t("quiz-site.need_desc_7"),
             ],
             conclusion: t("quiz-site.conclusion")
         },
@@ -251,8 +248,6 @@ const Websites = () => {
             ],
             what_includes_title: t("wedding-invitation-website.include_title"),
             includes_item: [
-                t("wedding-invitation-website.desc_1"),
-                t("wedding-invitation-website.desc_2"),
                 t("wedding-invitation-website.desc_3"),
                 t("wedding-invitation-website.desc_4"),
                 t("wedding-invitation-website.desc_5"),
@@ -264,8 +259,6 @@ const Websites = () => {
                 t("wedding-invitation-website.need_desc_2"),
                 t("wedding-invitation-website.need_desc_3"),
                 t("wedding-invitation-website.need_desc_4"),
-                t("wedding-invitation-website.need_desc_5"),
-                t("wedding-invitation-website.need_desc_6"),
             ],
             conclusion: t("wedding-invitation-website.conclusion")
         },
@@ -298,7 +291,6 @@ const Websites = () => {
                 t("websites_for_government.need_desc_4"),
                 t("websites_for_government.need_desc_5"),
                 t("websites_for_government.need_desc_6"),
-                t("websites_for_government.need_desc_7"),
             ],
             conclusion: t("websites_for_government.conclusion")
         },
@@ -316,7 +308,7 @@ const Websites = () => {
                             <p className='leading-10 text-justify dark:text-white'>{siteContent.description}</p>
                             <div
                                 className='md:mt-20 xs:mt-10 xs:mb-10 flex md:flex-row xs:flex-col items-center md:gap-12 xs:gap-6 dark:text-white'>
-                                <NavLink to={ROUTES.PRICES}
+                                <NavLink to={ROUTES.PRICES} onClick={handleClick}
                                          className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white'>
                                     {t("find_out_the_cost")}
                                 </NavLink>

@@ -64,7 +64,7 @@ const OurMission = () => {
                 <h2 className="xs:text-3xl md:text-6xl xs:my-4 md:my-0 md:absolute md:-left-20 top-0 z-10 dark:md:bg-black dark:text-white dark:md:opacity-60">
                     {t("home_page.mission_title")}
                 </h2>
-                <p className="text-left xs:mt-6 md:mt-52 xs:text-sm md:text-base xs:w-full md:w-3/4 mx-auto dark:text-white tracking-wider">
+                <p className="text-justify xs:mt-6 md:mt-52 xs:text-sm md:text-base xs:w-full md:w-3/4 mx-auto dark:text-white tracking-wider">
                     {t("home_page.mission_desc")}
                 </p>
                 <div className='mt-10'>

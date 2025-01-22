@@ -7,6 +7,7 @@ import {IoMdCheckmark} from "react-icons/io";
 import ModalWindow from "../ModalWindow/ModalWindow.jsx";
 import {Parallax} from "react-parallax";
 import Brief from "../Brief/Brief.jsx";
+import {handleClick} from "../../common/helpers.js";
 
 const Services = () => {
     const {id} = useParams(); // Получаем параметр из URL
@@ -185,7 +186,7 @@ const Services = () => {
                             <p className='leading-10 text-justify dark:text-white'>{siteContent.description}</p>
                             <div
                                 className='md:mt-20 xs:mt-10 xs:mb-10 flex md:flex-row xs:flex-col items-center md:gap-12 xs:gap-6 dark:text-white'>
-                                <NavLink to={ROUTES.PRICES}
+                                <NavLink to={ROUTES.PRICES} onClick={handleClick}
                                          className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white'>
                                     {t("find_out_the_cost")}
                                 </NavLink>
