@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import {useTranslation} from "react-i18next";
 import {NavLink, useParams} from "react-router-dom";
 import {ROUTES} from "../../config/routes.js";
@@ -261,7 +261,8 @@ const Services = () => {
                     </Parallax>
 
 
-                    <div className='md:h-96 xs:h-fit pt-20 pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
+                    <div
+                        className='md:h-96 xs:h-fit pt-20 pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
                         <h2 className='text-3xl pb-8 dark:text-white'>
                             {t("brief.title")}
                         </h2>
