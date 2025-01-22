@@ -116,7 +116,7 @@ const Form = () => {
                             type="checkbox"
                             checked={consentGiven}
                             onChange={(e) => setConsentGiven(e.target.checked)}
-                            className="w-6 h-6 text-black dark:text-orange-500 focus:ring-black dark:focus:ring-orange-500 border-gray-300 rounded"
+                            className="w-6 h-6 mr-3 text-black dark:text-orange-500 focus:ring-black dark:focus:ring-orange-500 border-gray-300 rounded"
                         />
                         <label htmlFor="consent" className="text-sm hover:text-orange-500 transition">
                             <NavLink to={ROUTES.PRIVACY_POLICY}>

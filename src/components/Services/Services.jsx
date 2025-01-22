@@ -5,6 +5,8 @@ import {ROUTES} from "../../config/routes.js";
 import {GiCheckMark} from "react-icons/gi";
 import {IoMdCheckmark} from "react-icons/io";
 import ModalWindow from "../ModalWindow/ModalWindow.jsx";
+import {Parallax} from "react-parallax";
+import Brief from "../Brief/Brief.jsx";
 
 const Services = () => {
     const {id} = useParams(); // Получаем параметр из URL
@@ -15,7 +17,7 @@ const Services = () => {
     const content = {
         'website-support': {
             title: t('website-support.name'),
-            img: '/support.png',
+            img: '/support.jpg',
             description: t('website-support.what_it_is'),
             websiteSupportTitle: t("website-support.service_include_title"),
             service_include: [
@@ -109,7 +111,7 @@ const Services = () => {
                 }
             ],
             support_important: t("SMM.support_important"),
-            backgroundImage: '/bg_smm.png',
+            backgroundImage: '/bg_smm.jpg',
             benefits_desc: [
                 t("SMM.be_available"),
                 t("SMM.safety_requirements"),
@@ -232,34 +234,34 @@ const Services = () => {
                     </div>
 
 
-                    <div
-                        className='md:h-dvh xs:h-fit pt-20 pb-20 flex flex-col justify-center items-center'
-                        style={{
-                            backgroundImage: `url(${siteContent.backgroundImage})`,
+                    <Parallax
+                        bgImage={siteContent.backgroundImage}
+                        strength={700} // Уровень эффекта параллакса
+                        bgImageStyle={{
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                            padding: '20px',
                         }}
                     >
-                        <h2 className='text-2xl mb-5 text-white font-bold'>
-                            {siteContent.support_important}
-                        </h2>
-                        <ul>
-                            {siteContent.benefits_desc.map((item, i) => (
-                                <div
-                                    key={i}
-                                    className='flex items-center gap-3 text-lg text-white md:container mx-auto'
-                                >
-                                    <IoMdCheckmark className='mb-10 text-yellow-300'/>
-                                    <li className='mb-10'>{item}</li>
-                                </div>
-                            ))}
-                        </ul>
-                    </div>
+                        <div className='md:h-dvh xs:h-fit pt-20 pb-20 flex flex-col justify-center items-center'>
+                            <h2 className='text-2xl mb-5 text-white font-bold'>
+                                {siteContent.support_important}
+                            </h2>
+                            <ul>
+                                {siteContent.benefits_desc.map((item, i) => (
+                                    <div
+                                        key={i}
+                                        className='flex items-center gap-3 text-lg text-white md:container mx-auto'
+                                    >
+                                        <IoMdCheckmark className='mb-10 text-yellow-300'/>
+                                        <li className='mb-10'>{item}</li>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
+                    </Parallax>
 
 
-                    <div className='md:h-screen xs:h-fit pt-20 pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
+                    <div className='md:h-96 xs:h-fit pt-20 pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
                         <h2 className='text-3xl pb-8 dark:text-white'>
                             {t("brief.title")}
                         </h2>
@@ -267,14 +269,7 @@ const Services = () => {
                             {t("brief.desc")}
                         </p>
                         <div className='mt-20'>
-                            <a
-                                href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white dark:text-white'
-                            >
-                                {t("brief.brief_button")}
-                            </a>
+                            <Brief/>
                         </div>
                     </div>
 

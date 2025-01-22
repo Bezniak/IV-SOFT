@@ -13,7 +13,7 @@ import {IoSunnySharp} from "react-icons/io5";
 
 
 const Navbar = () => {
-    const {theme, toggleTheme, locale, changeLocale} = useAuth();
+    const {theme, toggleTheme, locale} = useAuth();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
     const [isSitesDropdownOpen, setIsSitesDropdownOpen] = useState(false);
@@ -21,6 +21,8 @@ const Navbar = () => {
     const {currentLanguage, changeLanguage} = useLanguage();
     const {t} = useTranslation();
 
+
+    console.log(locale)
 
     // Закрытие меню при клике вне меню или прокрутке
     useEffect(() => {
@@ -119,6 +121,15 @@ const Navbar = () => {
                                      className="block py-2 px-3 md:p-0 text-white transition"
                                      aria-current="page">
                                 {t("home")}
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink to={ROUTES.ABOUT_US}
+                                     onClick={() => setIsMobileMenuOpen(false)}
+                                     className="block py-2 px-3 rounded md:border-0 md:p-0 text-white transition"
+                            >
+                                {t("about_us")}
                             </NavLink>
                         </li>
 

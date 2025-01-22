@@ -5,6 +5,7 @@ import {IoMdCheckmark} from "react-icons/io";
 import {ROUTES} from "../../config/routes.js";
 import ModalWindow from "../ModalWindow/ModalWindow.jsx"; // Импортируем useTranslation
 import {Parallax} from 'react-parallax';
+import Brief from "../Brief/Brief.jsx";
 
 
 const Websites = () => {
@@ -19,7 +20,7 @@ const Websites = () => {
             title: t('businessCardWebsite.name'),
             description: t('businessCardWebsite.what_it_is'),
             img: '/disness-card.jpg',
-            backgroundImage: '/benefit_bg.jpg',
+            backgroundImage: '/benefit_bg.png',
             benefits_title: t("businessCardWebsite.benefits_title"),
             benefits_desc: [
                 t("businessCardWebsite.benefits_1"),
@@ -409,7 +410,7 @@ const Websites = () => {
                             {siteContent.conclusion}
                         </p>
                     </div>
-                    <div className='md:h-screen xs:h-fit pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
+                    <div className='md:h-96 xs:h-fit pb-20 text-center flex flex-col justify-center items-center md:container mx-auto'>
                         <h2 className='text-3xl pb-8 dark:text-white'>
                             {t("brief.title")}
                         </h2>
@@ -417,14 +418,7 @@ const Websites = () => {
                             {t("brief.desc")}
                         </p>
                         <div className='mt-20'>
-                            <a
-                                href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='xs:w-full text-center border border-black py-3 px-6 rounded hover:bg-black hover:text-white transition dark:hover:bg-white dark:hover:text-black dark:border-white dark:text-white'
-                            >
-                                {t("brief.brief_button")}
-                            </a>
+                            <Brief/>
                         </div>
                     </div>
                 </div>

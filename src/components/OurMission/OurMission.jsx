@@ -1,12 +1,13 @@
 import React from 'react';
-import { useTranslation } from "react-i18next";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import {useTranslation} from "react-i18next";
+import {motion, useAnimation} from "framer-motion";
+import {useInView} from "react-intersection-observer";
+import Brief from "../Brief/Brief.jsx";
 
 const OurMission = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const controls = useAnimation();
-    const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.2 });
+    const [ref, inView] = useInView({triggerOnce: false, threshold: 0.2});
 
     // Запускаем анимацию при попадании в зону видимости и сбрасываем её, когда элемент выходит
     React.useEffect(() => {
@@ -19,13 +20,13 @@ const OurMission = () => {
 
     // Варианты анимации
     const zoomIn = {
-        hidden: { scale: 0.8, opacity: 0 },
-        visible: { scale: 1, opacity: 1, transition: { duration: 0.8 } },
+        hidden: {scale: 0.8, opacity: 0},
+        visible: {scale: 1, opacity: 1, transition: {duration: 0.8}},
     };
 
     const slideFromBottom = {
-        hidden: { y: 50, opacity: 0 },
-        visible: { y: 0, opacity: 1, transition: { duration: 0.8 } },
+        hidden: {y: 50, opacity: 0},
+        visible: {y: 0, opacity: 1, transition: {duration: 0.8}},
     };
 
     return (
@@ -66,13 +67,9 @@ const OurMission = () => {
                 <p className="text-left xs:mt-6 md:mt-52 xs:text-sm md:text-base xs:w-full md:w-3/4 mx-auto dark:text-white tracking-wider">
                     {t("home_page.mission_desc")}
                 </p>
-                    <a
-                        href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="md:mt-20 block w-fit mx-auto xs:mt-10 mb-10 border py-2 px-4 border-black rounded hover:bg-black hover:text-white transition dark:border-white dark:text-white">
-                        {t("home_page.leave_message")}
-                    </a>
+                <div className='mt-10'>
+                    <Brief/>
+                </div>
             </motion.div>
         </div>
     );

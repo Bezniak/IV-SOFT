@@ -1,17 +1,18 @@
 import React from 'react';
-import { FaFileAlt, FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import {FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp} from "react-icons/fa";
 import Form from "../FormContainer/Form.jsx";
-import { FaEnvelope, FaFacebook, FaPhone } from "react-icons/fa6";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import {FaEnvelope, FaFacebook, FaPhone} from "react-icons/fa6";
+import {useTranslation} from "react-i18next";
+import {motion} from "framer-motion";
+import Brief from "../Brief/Brief.jsx";
 
 const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    hidden: {opacity: 0, y: 20},
+    visible: {opacity: 1, y: 0}
 };
 
 const staggerContainer = {
-    hidden: { opacity: 1 },
+    hidden: {opacity: 1},
     visible: {
         opacity: 1,
         transition: {
@@ -21,7 +22,7 @@ const staggerContainer = {
 };
 
 const Contacts = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <motion.div
@@ -47,7 +48,7 @@ const Contacts = () => {
                             {t('contactsPage.contactsDescription')}
                         </p>
                         <motion.div variants={fadeInUp}>
-                            <Form />
+                            <Form/>
                         </motion.div>
                     </motion.div>
                     <motion.div className='flex-1 flex flex-col gap-10' variants={staggerContainer}>
@@ -55,15 +56,9 @@ const Contacts = () => {
                             <h2 className='text-3xl mb-6'>
                                 {t('fill_brief')}
                             </h2>
-                            <a
-                                href="https://forms.yandex.ru/u/67800e14d0468829221ac619/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className='flex items-center justify-start text-lg uppercase text-orange-500'
-                            >
-                                <FaFileAlt className='mr-2 text-2xl'/>
-                                {t("brief_form")}
-                            </a>
+                            <div className='text-orange-500 uppercase'>
+                                <Brief/>
+                            </div>
                             <p className='mt-6'>
                                 {t('calculate_budget')}
                             </p>
