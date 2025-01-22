@@ -1,4 +1,3 @@
-import React from 'react';
 import {FaInstagram, FaLinkedin, FaTelegramPlane, FaWhatsapp} from "react-icons/fa";
 import Form from "../FormContainer/Form.jsx";
 import {FaEnvelope, FaFacebook, FaPhone} from "react-icons/fa6";
