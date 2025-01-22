@@ -258,7 +258,7 @@ const Price = () => {
                             key={item.id}
                             className={`relative ${
                                 item.isPopular
-                                    ? 'bg-gray-900 dark:bg-gray-800 border border-gray-700 dark:border-gray-900 shadow-lg text-white'
+                                    ? 'bg-gray-900 dark:bg-black border border-gray-700 dark:border-gray-900 shadow-lg text-white'
                                     : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white'
                             } rounded-lg p-12 flex flex-col`}
                             variants={itemVariants}
